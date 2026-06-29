@@ -102,14 +102,40 @@
       color: #dff8ff;
       font-size: 0.95rem;
     }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      box-shadow: 0 4px 12px rgba(97, 218, 251, 0.2);
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 250px;
+    }
   </style>
 </head>
 <body>
   <main class="container">
     <section class="hero">
-      <h1>Alexandru Albu</h1>
-      <p class="role">Senior Software Engineer at Google</p>
-      <p class="meta">Zürich, Switzerland</p>
+      <div class="profile-header">
+        <img src="https://github.com/user-attachments/assets/4d3240cf-ce3f-4ffd-8c38-cee13fd31ed9" alt="Alexandru Albu" class="profile-image">
+        <div class="profile-info">
+          <h1>Alexandru Albu</h1>
+          <p class="role">Senior Software Engineer at Google</p>
+          <p class="meta">Zürich, Switzerland</p>
+        </div>
+      </div>
       <p class="headline">
         Senior Software Engineer with over a decade of experience scaling backend infrastructure,
         developing privacy-aware data pipelines, and building full-stack applications.
