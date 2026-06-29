@@ -123,6 +123,26 @@
       flex: 1;
       min-width: 250px;
     }
+
+    .resume-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      background: linear-gradient(135deg, var(--accent) 0%, #4bb4d6 100%);
+      color: var(--bg);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(97, 218, 251, 0.3);
+    }
+
+    .resume-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(97, 218, 251, 0.4);
+    }
   </style>
 </head>
 <body>
@@ -140,6 +160,9 @@
         Senior Software Engineer with over a decade of experience scaling backend infrastructure,
         developing privacy-aware data pipelines, and building full-stack applications.
       </p>
+      <a href="alexandru_albu_resume.pdf" class="resume-link" download>
+        📄 Download Resume
+      </a>
     </section>
 
     <section class="card">
