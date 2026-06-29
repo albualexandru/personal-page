@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandru Albu | Senior Software Engineer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #0b1020;
+      --surface: #111a33;
+      --surface-2: #172342;
+      --text: #e8eefc;
+      --muted: #b8c7e8;
+      --accent: #61dafb;
+      --border: #24365e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1e315e 0%, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1000px, 92vw);
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    .hero, .card {
+      background: linear-gradient(180deg, var(--surface-2), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: clamp(1.3rem, 2.2vw, 1.65rem);
+      margin-bottom: 0.9rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 0.8rem 0 0.35rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    .role {
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .meta {
+      margin-bottom: 0.9rem;
+    }
+
+    .headline {
+      max-width: 72ch;
+    }
+
+    ul {
+      padding-left: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .tag-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .tag-list li {
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(97, 218, 251, 0.08);
+      color: #dff8ff;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Alexandru Albu</h1>
+      <p class="role">Senior Software Engineer at Google</p>
+      <p class="meta">Zürich, Switzerland</p>
+      <p class="headline">
+        Senior Software Engineer with over a decade of experience scaling backend infrastructure,
+        developing privacy-aware data pipelines, and building full-stack applications.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Professional Experience</h2>
+      <h3>Google — Senior Software Engineer (Jan 2017 – Present)</h3>
+      <ul>
+        <li>Privacy &amp; Security (2021–Present): Designed a framework processing petabytes of data at terabytes-per-second scale and built gigabyte-per-second monitoring pipelines.</li>
+        <li>Spearheaded an AI-driven data lineage project in C++ and Python to analyze trillions of datasets used for AI training.</li>
+        <li>Assistant Memory (2019–2021): Co-developed a startup-like product enabling contextual phone data storage and search; operated a large Java backend stack for data enrichment.</li>
+        <li>Calendar Team (2017–2019): Co-authored a unified high-performance sync protocol serving millions of queries per second across Google Calendar clients.</li>
+        <li>Leadership: Google Core Tech Impact Award (H1 2024), 15+ peer bonuses, 100+ technical interviews conducted.</li>
+      </ul>
+
+      <h3>Google — Software Engineering Intern (2014 – 2016)</h3>
+      <ul>
+        <li>Prototyped Hangouts/Calendar integration UI features and deep-linking capabilities.</li>
+        <li>Contributed to Chrome developer tooling by assisting with a DART-based IDE initiative.</li>
+      </ul>
+
+      <h3>Canel SA — Software Developer (Apr 2010 – Feb 2013)</h3>
+      <ul>
+        <li>Wrote 6,000+ lines of low-level C code for traffic light controllers.</li>
+        <li>Built frontend and PHP/MySQL backend for a stadium access control system.</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Education</h2>
+        <ul>
+          <li>Karlsruhe Institute of Technology (KIT): M.Sc. in Machine Learning and Telematics (75/120 ECTS completed).</li>
+          <li>Karlsruhe Institute of Technology (KIT): B.Sc. (maximum grade), thesis on radio propagation estimation using 3D subject pose and location.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Technical Skills</h2>
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>Java</li><li>C/C++</li><li>Python</li><li>SQL</li><li>JavaScript</li>
+        </ul>
+        <h3>Web &amp; Mobile</h3>
+        <ul class="tag-list">
+          <li>Node.js</li><li>React 18</li><li>Android MVVM</li><li>iOS UIKit</li>
+        </ul>
+        <h3>AI Integration</h3>
+        <ul class="tag-list">
+          <li>Google Gemini</li><li>Claude</li><li>GitHub Copilot</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Spoken Languages</h2>
+        <ul>
+          <li>Romanian (Native)</li>
+          <li>English (C1)</li>
+          <li>German (C1)</li>
+          <li>Chinese (A1)</li>
+          <li>Spanish (A1)</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
