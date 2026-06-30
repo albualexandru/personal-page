@@ -143,17 +143,38 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 16px rgba(97, 218, 251, 0.4);
     }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .social-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .social-link:hover {
+      color: #dff8ff;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <main class="container">
     <section class="hero">
       <div class="profile-header">
-        <img src="https://github.com/user-attachments/assets/4d3240cf-ce3f-4ffd-8c38-cee13fd31ed9" alt="Alexandru Albu" class="profile-image">
+        <img src="images/profile.jpg" alt="Alexandru Albu" class="profile-image">
         <div class="profile-info">
           <h1>Alexandru Albu</h1>
           <p class="role">Senior Software Engineer at Google</p>
           <p class="meta">Zürich, Switzerland</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/albualexandru/" class="social-link" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          </div>
         </div>
       </div>
       <p class="headline">
